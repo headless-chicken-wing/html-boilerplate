@@ -1,0 +1,23 @@
+body {
+   background-color: black;
+}
+
+h1 {
+   color: red;
+   text-align: center;
+}
+
+h2 {
+   color: chartreuse;
+   text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+ol {
+    color: orange;
+    text-align: center;
+}
