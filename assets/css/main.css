@@ -1,6 +1,7 @@
 body {
-   background-color: black;
+   background-image: url("../img/backgrounds/eyeofrah.jpg");
 }
+
 
 h1 {
    color: red;
@@ -15,4 +16,87 @@ h2 {
 p {
     color: white;
     text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #f26415;
+    text-align: left;
+    position: absolute;
+    bottom: 38%;
+    right: 46%;
+}
+
+.image-container {
+  background: url(../../assets/img/buttons/thumb-1920-597965.jpg);
+  height: 25vh;
+  width: 25vh;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: absolute;
+  position: fixed;
+  bottom: 0%;
+  left: 85%;
+  border-radius: 10%;
+}
+
+img {
+  position: fixed;
+  bottom: 60px;
+  right: 200px;
+  width: 75px;
+  cursor: pointer;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-20px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.trailer-container video {
+  position: flex;
+  max-width: 700px;
+  max-height: 500px;
+  outline: none;
+  border-radius: 50%;
+}
+
+.close-icon {
+  position: absolute;
+  top: 330px;
+  left: 650px;
+  color: #f26415;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: sans-serif;
+  padding: 0px;
+  border-radius: 100%;
+}
+
+@media (max-width: 991px) {
+  .trailer-container video {
+    max-width: 130%;
+  }
+}
+
+/* JavaScript */
+.active.trailer-container {
+  visibility: hidden;
+  opacity: 0;
 }
